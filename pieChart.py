@@ -6,7 +6,7 @@ from matplotlib.gridspec import GridSpec
 
 pointsOfEmbarkment = ["Cherbourg","Queenstown", "Southampton"]
 groups = (df.groupby("Embarked"))
-total = (dict(groups["Survived"].agg(np.size)))
+d = (dict(groups["Survived"].agg(np.size)))
 #print(d)
 the_grid = GridSpec(1, 3)
 plt.subplot(the_grid[0, 0], aspect=1)
